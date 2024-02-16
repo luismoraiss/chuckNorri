@@ -1,5 +1,58 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+main{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+img{
+    width: 350px;
+}
+
+img:hover {
+    animation-duration: 0.5s;
+    animation-name: shake;
+    animation-direction:alternate ;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(-5px);
+        transform: translateY(-5px);
+    }
+
+    25% {
+        transform: translateX(10px);
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(10px);
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateX(-5px);
+        transform: translateY(5px);
+    }
+}
+
+#joker{
+    text-align: center;
+    width: 80%;
+    font-size: 1.3rem;
 }
